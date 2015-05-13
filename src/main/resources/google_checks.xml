@@ -173,9 +173,13 @@
         </module>
         <module name="NonEmptyAtclauseDescription"/>
         <module name="JavadocTagContinuationIndentation"/>
+
+		<!-- デフォルトではjavadocの文末にピリオドが必須なため下記をコメントアウト -->
+		<!--
         <module name="SummaryJavadocCheck">
             <property name="forbiddenSummaryFragments" value="^@return the *|^This method returns |^A [{]@code [a-zA-Z0-9]+[}]( is a )"/>
-        </module>
+			</module>
+		-->
         <module name="JavadocParagraph"/>
         <module name="AtclauseOrder">
             <property name="tagOrder" value="@param, @return, @throws, @deprecated"/>
